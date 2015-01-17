@@ -9,6 +9,7 @@ This software has been tested on a relatively clean Mac OS (10.9.3), with the fo
 
 * Python 2.7
 * Node.js/npm (0.10/1.4)
+* Solr 3.6
 
 If not available, the easiest way to obtain these is using [Homebrew](http://brew.sh/).
 
@@ -20,7 +21,7 @@ The project depends on several Python and front-end packages, as well as a local
 
 1. `pip install -r requirements.txt` -- you may want to install these packages into a Python virtualenv for this project,
 2. `cd src/main/python/static/` and `bower install` will download all front-end dependencies into a `bower_components` directory,
-3. `brew install solr` will install the Solr server. If not using Homebrew, Solr can be installed manually from [Apache](http://lucene.apache.org/solr/);
+3. `brew install solr36` will install the correct version of the Solr server. If not using Homebrew, Solr can be installed manually from [Apache](http://lucene.apache.org/solr/); If installed through brew, use `solr36` rather than `solr` in the further instructions.
 
 ## Getting Stackoverflow questions into Solr
 
